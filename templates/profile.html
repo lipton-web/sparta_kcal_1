@@ -48,6 +48,11 @@
             box-sizing: border-box;
         }
 
+<<<<<<< HEAD
+        .jumbotron {
+            width: 800px;
+            margin-top: 50px;
+=======
          /*{#헤드부분#}*/
         .hero {
             margin-bottom: 10px;
@@ -81,6 +86,7 @@
             bottom: 10px;
         }
         .btn_mypage {
+>>>>>>> kimbumsoo0820
             background-color: #72a772;
         }
         #btn_logout {
@@ -215,6 +221,8 @@
             margin: auto;
         }
 
+<<<<<<< HEAD
+=======
          #btn-post-box {
             font-weight: bold;
             margin-top: 10px;
@@ -240,6 +248,7 @@
         .card_made:hover .img_close {
             visibility: visible;
         }
+>>>>>>> kimbumsoo0820
     </style>
     <script>
         //let userid = '{{ userid }}'
@@ -377,6 +386,66 @@
             })
         }
 
+<<<<<<< HEAD
+
+
+
+
+
+            function showkcal() {
+                $('#cards-box').empty()
+                $('#sumcal').empty()
+
+                $.ajax({
+                    type: "GET",
+                    url: "/api/profile_cal?myid={{ userid }}",
+                    data: {},
+                    success: function (response) {
+                        let date_kalsum = response['date_kalsum']
+                        let foods = response['all_foods']
+                        let goal_cal = response['goal_cal']
+                        let goal = goal_cal[0]['goal_cal']
+
+                        let userid = "{{ userid }}"
+
+                        for (let i = 0; i < date_kalsum.length; i++) {
+                            let day_cal = date_kalsum[i]['total']
+                            let day = date_kalsum[i]['_id']['date']
+
+                            if (goal < day_cal) {
+                                let dis = parseInt(day_cal) - parseInt(goal)
+                                let temp_html = `<div class="calsum">
+  <div class="container">
+    <p >${day} ${userid}님의 총 섭취 칼로리는 <span style="color: #fcc419">${day_cal} </span> 입니다.!</p>
+<p>목표칼로리인 ${goal} 보다 ${dis} <span style="color: red">초과 되었습니다.<p>
+
+  </div>
+</div>
+                        `
+                                $('#sumcal').append(temp_html)
+                            } else {
+                                let temp_html = `<div class="calsum">
+  <div class="container">
+    <p >${day} ${userid}님의 총 섭취 칼로리는 <span style="color: #fcc419">${day_cal} </span> 입니다.!</p>
+<p>목표칼로리인 ${goal} 보다 낮습니다. <p>
+
+  </div>
+</div>
+                        `
+
+                                $('#sumcal').append(temp_html)
+                            }
+
+                            {#$('#sumcal').append(temp_html)#}
+                        }
+
+                        for (let i = 0; i < foods.length; i++) {
+                            let food_name = foods[i]['food_name']
+                            let food_date = foods[i]['food_date']
+                            let food_kcal = foods[i]['food_kcal']
+                            let file = foods[i]['file']
+                            let temp_html = `<div class="card card_made">
+=======
 
         function showkcal() {
             $('#cards-box').empty()
@@ -448,6 +517,7 @@
                         let food_kcal = foods[i]['food_kcal']
                         let file = foods[i]['file']
                         let temp_html = `<div class="card card_made">
+>>>>>>> kimbumsoo0820
                                                <img class="card-img-top card_img"
                                                     src="../static/img/${file}"
                                                     alt="Card image cap">
@@ -458,11 +528,17 @@
                                                    <p class="card-text comment">${food_kcal} Kcal</p>
                                                </div>
                                            </div>`
-                        $('#cards-box').append(temp_html)
+                            $('#cards-box').append(temp_html)
+                        }
                     }
+<<<<<<< HEAD
+                })
+            }
+=======
                 }
             });
         }
+>>>>>>> kimbumsoo0820
 
         function logout() {
             $.removeCookie('mytoken', {path: '/'});
@@ -544,7 +620,10 @@
             </div>
         </div>
 
+<<<<<<< HEAD
+=======
 {# 프로필 수정기 #}
+>>>>>>> kimbumsoo0820
     {% else %}
         <div class="jumbotron">
             <h1 class="display-4 text1">프로필 수정기</h1>
