@@ -2,7 +2,7 @@
 항해99 3기 1조 
 주소 - http://kimbumsoo0820.shop/
 
-프론트엔드: 자바스크립트 jquery
+프론트엔드: 자바스크립트, jquery, bulma, bootstrap
 <br/>
 백엔드: 파이썬 flask, pymongo, pyjwt, requests 
 
