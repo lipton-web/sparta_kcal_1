@@ -38,3 +38,5 @@
 전은규 https://velog.io/@stravinest/1stminiproject-%ED%9A%8C%EA%B3%A0
 <br>
 최진식 https://velog.io/@lipton/%ED%95%AD%ED%95%B499-1%EC%A3%BC%EC%B0%A8-%ED%9A%8C%EA%B3%A0
+<br>
+최선강
