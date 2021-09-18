@@ -3,6 +3,7 @@
 주소 - http://kimbumsoo0820.shop/
 
 프론트엔드: 자바스크립트 jquery
+<br/>
 백엔드: 파이썬 flask, pymongo, pyjwt, requests 
 
 <h2>로그인 화면</h2>
