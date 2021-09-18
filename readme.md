@@ -45,12 +45,15 @@ https://youtu.be/6arHZNzLY2Q
 <img src="https://user-images.githubusercontent.com/82028756/133881850-23e69e3e-d834-4265-a50c-38f7186dbf00.png">
 내가 등록한 먹은 음식 보여 줌. 마우스를 위로 올리면 삭제 버튼 나오게 구현. 삭제 가능
 
+<br>
+<br>
+팀원<br>
 - 김범수 : 메인페이지 (오늘의 칼로리)
 - 전은규 : 마이페이지 (오늘의 프로필)
 - 최진식 : 로그인및 프론트앤드 작업
 - 최선강 : 회원가입 및 백앤드작업
-
-
+<br>
+<br>
 팀원 회고록 
 김범수 https://velog.io/@kbs2082/%ED%95%AD%ED%95%B499-3%EA%B8%B0%EA%B0%80%EC%9E%A5-%EA%B3%A0%EB%AF%BC-%EB%A7%8E%EC%9D%B4%ED%96%88%EB%8D%98-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84 <br>
 전은규 https://velog.io/@stravinest/1stminiproject-%ED%9A%8C%EA%B3%A0
